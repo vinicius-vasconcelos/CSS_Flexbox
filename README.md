@@ -7,4 +7,5 @@ Projeto feito junto ao curso de desenvolvimento web da <em><a href="https://www.
 <ul>
   <li>HTML5</li>
   <li>CSS3 - FLEXBOX</li>
+  <li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Todos os exemplos de FLEXBOX-CONTAINER e FLEXBOX-ITEMS</a></li>
 </ul>
