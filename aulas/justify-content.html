@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>justify-content</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .principal {
+                width: 100%;
+                height: auto;
+                background-color: #eee;
+                margin: 10px auto;
+                padding: 10px;
+                box-shadow: 15px 15px 15px 2px #aaaaaa;
+                border-radius: 5px;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .dist2 {
+                height: 10em;
+            }
+
+            section {
+                background-color: tomato;
+                margin: 2px;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-1 {
+                flex: 1;
+            }
+
+
+            .flex-start {
+               justify-content: flex-start;
+            }
+
+            .flex-end {
+                justify-content: flex-end;
+            }
+
+            .flex-center {
+                justify-content: center;
+            }
+
+            .flex-space-around {
+                justify-content: space-around;
+            }
+
+            .flex-space-between {
+                justify-content: space-between;
+            }
+
+            .flex-space-evenly {
+                justify-content: space-evenly;
+            }
+
+            .column {
+                flex-direction: column;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>JUSTIFY-CONTENT: FLEX-START</h1>
+        <main class="principal flex-container flex-start">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: FLEX-END</h1>
+        <main class="principal flex-container flex-end">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: CENTER</h1>
+        <main class="principal flex-container flex-center">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-BETWEEN</h1>
+        <main class="principal flex-container flex-space-between">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-AROUND</h1>
+        <main class="principal flex-container flex-space-around">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-AROUND FLEX-1</h1>
+        <main class="principal flex-container flex-space-around">
+            <section class="flex-item flex-1">Item 1</section>
+            <section class="flex-item flex-1">Item 3</section>
+        </main>
+
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-EVELY</h1>
+        <main class="principal flex-container flex-space-evenly">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <hr>
+        <h1>JUSTIFY-CONTENT: FLEX-START(COLUMN)</h1>
+        <main class="principal flex-container flex-start column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: FLEX-END(COLUMN)</h1>
+        <main class="principal flex-container flex-end column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: CENTER(COLUMN)</h1>
+        <main class="principal flex-container flex-center column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-BETWEEN(COLUMN)</h1>
+        <main class="principal flex-container flex-space-between column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-AROUND(COLUMN)</h1>
+        <main class="principal flex-container flex-space-around column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-AROUND(COLUMN) FLEX-1</h1>
+        <main class="principal flex-container flex-space-around column dist2">
+            <section class="flex-item flex-1">Item 1</section>
+            <section class="flex-item flex-1">Item 3</section>
+        </main>
+
+        <hr>
+        <h1>JUSTIFY-CONTENT: SPACE-EVELY(COLUMN)</h1>
+        <main class="principal flex-container flex-space-evenly column dist2">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 3</section>
+        </main>
+    </body>
+</html>

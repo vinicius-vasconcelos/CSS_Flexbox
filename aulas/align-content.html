@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Align-content</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .principal {
+                width: 50%;
+                height: 15em;
+                background-color: #eee;
+                margin: 10px auto;
+                padding: 10px;
+                box-shadow: 15px 15px 15px 2px #aaaaaa;
+                border-radius: 5px;
+                font-size: 1em;
+                text-align: center;
+            }
+
+            section {
+                background-color: tomato;
+                margin: 2px;
+                height: 3em;;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+            .align-content-stretch {
+                align-content: stretch;
+            }
+
+            .align-content-flex-start {
+                align-content: flex-start;
+            }
+
+            .align-content-flex-end {
+                align-content: flex-end;
+            }
+
+            .align-content-center {
+                align-content: center;
+            }
+
+            .align-content-space-between {
+                align-content: space-between;
+            }
+
+            .align-content-space-around {
+                align-content: space-around;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ALIGN-CONTENT: STRETCH</h1>
+        <main class="principal flex-container align-content-stretch">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+        <hr>
+        <h1>ALIGN-CONTENT: FLEX-START</h1>
+        <main class="principal flex-container align-content-flex-start">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+
+        <hr>
+        <h1>ALIGN-CONTENT: FLEX-END</h1>
+        <main class="principal flex-container align-content-flex-end">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+
+        <hr>
+        <h1>ALIGN-CONTENT: CENTER</h1>
+        <main class="principal flex-container align-content-center">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+
+        <hr>
+        <h1>ALIGN-CONTENT: SPACE-BETWEEN</h1>
+        <main class="principal flex-container align-content-space-between">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+
+        <hr>
+        <h1>ALIGN-CONTENT: SPACE-AROUND</h1>
+        <main class="principal flex-container align-content-space-around">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2 - bla bla bla</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Teste TesteTesteTeste Teste Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+    </body>
+</html>

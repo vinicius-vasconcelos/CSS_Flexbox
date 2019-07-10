@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flex-wrap</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .principal {
+                width: 50%;
+                height: auto;
+                background-color: #eee;
+                margin: 10px auto;
+                padding: 10px;
+                box-shadow: 15px 15px 15px 2px #aaaaaa;
+                border-radius: 5px;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            section {
+                background-color: tomato;
+                margin: 2px;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-item {
+                flex: 1;
+            }
+
+            .no-wrap {
+                flex-wrap: nowrap;
+            }
+
+            .wrap {
+                flex-wrap: wrap;
+            }
+
+            .wrap-reverse {
+                flex-wrap: wrap-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FLEX-NOWRAP</h1>
+        <main class="principal flex-container no-wrap">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+        <hr>
+        <h1>FLEX-WRAP</h1>
+        <main class="principal flex-container wrap">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+        <hr>
+        <h1>FLEX-WRAP-REVERSE</h1>
+        <main class="principal flex-container wrap-reverse">
+            <section class="flex-item">Item 1</section>
+            <section class="flex-item">Item 2</section>
+            <section class="flex-item">Item 3</section>
+            <section class="flex-item">Item 4</section>
+            <section class="flex-item">Item 5</section>
+            <section class="flex-item">Item 6</section>
+            <section class="flex-item">Item 7</section>
+            <section class="flex-item">Item 8</section>
+            <section class="flex-item">Item 9</section>
+        </main>
+
+    </body>
+</html>
